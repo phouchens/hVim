@@ -16,8 +16,8 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- open side window
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- open side window in NerdTree
+keymap("n", "<leader>e", ":NERDTreeToggle<cr>", opts)
 
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)

@@ -20,4 +20,4 @@ require'nvim-treesitter.configs'.setup {
 }
 
 
-vim.cmd "colorscheme sonokai"
+vim.cmd "colorscheme gruvbox"

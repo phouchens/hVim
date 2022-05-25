@@ -44,6 +44,7 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use {'neoclide/coc.nvim', branch = 'release'}
   use 'sainnhe/sonokai'
+  use 'morhetz/gruvbox'
   use 'nvim-treesitter/nvim-treesitter'
   use 'tpope/vim-commentary'
   use 'JoosepAlviste/nvim-ts-context-commentstring'
@@ -61,6 +62,7 @@ return packer.startup(function(use)
      require"surround".setup {mappings_style = "surround"}
    end
   }
+  use 'preservim/nerdtree'
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
