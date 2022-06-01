@@ -4,7 +4,11 @@ require "plugins"
 require "telescope-config"
 require "coc-config"
 
-require('lualine').setup()
+require('lualine').setup {
+  sections = {
+    lualine_c = {{'filename', file_status = true, path = 1}}
+  }
+}
 
 require'nvim-treesitter.configs'.setup {
   context_commentstring = {
@@ -21,3 +25,4 @@ require'nvim-treesitter.configs'.setup {
 
 
 vim.cmd "colorscheme gruvbox"
+vim.cmd "let NERDTreeShowHidden=1"

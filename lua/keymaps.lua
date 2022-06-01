@@ -19,9 +19,12 @@ keymap("n", "<C-l>", "<C-w>l", opts)
 -- open side window in NerdTree
 keymap("n", "<leader>e", ":NERDTreeToggle<cr>", opts)
 
+keymap("n", "<leader>s", ":w<CR>", opts)
+
 -- Navigate buffers
 keymap("n", "<S-l>", ":bnext<CR>", opts)
 keymap("n", "<S-h>", ":bprevious<CR>", opts)
+
 
 -- Insert --
 -- Press jk fast to enter

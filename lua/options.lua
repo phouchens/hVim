@@ -1,6 +1,7 @@
 vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
+vim.opt.softtabstop = 0
 vim.opt.expandtab = true
+vim.opt.shiftwidth = 2
 vim.opt.smartindent = true
 vim.opt.exrc = true
 vim.opt.relativenumber = true
@@ -20,3 +21,5 @@ vim.opt.colorcolumn = "80"
 vim.opt.signcolumn = "yes"
 vim.opt.cmdheight = 2
 vim.opt.mouse = "a"
+vim.opt.switchbuf = "usetab"
+vim.opt.title = true
