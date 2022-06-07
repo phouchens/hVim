@@ -23,6 +23,6 @@ require'nvim-treesitter.configs'.setup {
   }
 }
 
-
+vim.cmd "let g:blamer_enabled = 1"
 vim.cmd "colorscheme gruvbox"
-vim.cmd "let NERDTreeShowHidden=1"
+vim.cmd "let NERDTreeShowHidden=1" 
