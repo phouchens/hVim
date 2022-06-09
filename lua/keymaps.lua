@@ -16,6 +16,11 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
+--Make adjusting splits easier
+keymap("n", "<A-Left>", ":vertical resize +3", opts)
+keymap("n", "<A-Right>", ":vertical resize -3", opts)
+keymap("n", "<A-Up>", ":resize +3", opts)
+keymap("n", "<A-Down>", ":resize +3", opts)
 -- open side window in NerdTree
 keymap("n", "<leader>e", ":NERDTreeToggle<cr>", opts)
 
@@ -46,6 +51,12 @@ keymap("x", "J", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "K", ":move '<-2<CR>gv-gv", opts)
 keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
+
+-- Stay in indent mode
+keymap("x", "<", "<gv", opts)
+keymap("x", ">", ">gv", opts)
+
+
 
 -- Terminal --
 -- Better terminal navigation
