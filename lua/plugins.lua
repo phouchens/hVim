@@ -44,6 +44,7 @@ return packer.startup(function(use)
   use 'wbthomason/packer.nvim'
   use {'neoclide/coc.nvim', branch = 'release'}
   use 'sainnhe/sonokai'
+  use 'sainnhe/everforest'
   use 'morhetz/gruvbox'
   use 'nvim-treesitter/nvim-treesitter'
   use 'tpope/vim-commentary'

@@ -24,5 +24,11 @@ require'nvim-treesitter.configs'.setup {
 }
 
 vim.cmd "let g:blamer_enabled = 1"
-vim.cmd "colorscheme gruvbox"
 vim.cmd "let NERDTreeShowHidden=1" 
+
+vim.cmd "set termguicolors"
+vim.cmd "set background=dark"
+vim.cmd "let g:everforest_background = 'hard'"
+vim.cmd "let g:everforest_better_performance = 1"
+vim.cmd "colorscheme everforest"
+
