@@ -3,6 +3,7 @@ require "keymaps"
 require "plugins"
 require "telescope-config"
 require "coc-config"
+require "ale"
 
 require('lualine').setup {
   sections = {
@@ -26,6 +27,9 @@ require'nvim-treesitter.configs'.setup {
 vim.cmd "let g:blamer_enabled = 1"
 vim.cmd "let NERDTreeShowHidden=1" 
 
+vim.cmd "let b:ale_fixers = {'bash': ['shellcheck']}"
+
+-- theme
 vim.cmd "set termguicolors"
 vim.cmd "set background=dark"
 vim.cmd "let g:everforest_background = 'hard'"

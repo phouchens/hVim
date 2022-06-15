@@ -1,11 +1,30 @@
 {
- "languageserver": {
+  "languageserver": {
     "elmLS": {
       "command": "elm-language-server",
       "filetypes": ["elm"],
       "rootPatterns": ["elm.json"]
+    },
+    "bash": {
+      "command": "bash-language-server",
+      "args": ["start"],
+      "filetypes": ["sh"],
+      "ignoredRootPaths": ["~"]
     }
   },
- "codeLens.enable": true,
- "coc.preferences.formatOnSaveFiletypes": ["elm", "css", "markdown", "javascript", "javascriptreact", "typescript", "typescriptreact" ]
+  "codeLens.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": [
+    "elm",
+    "css",
+    "markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "json"
+  ],
+  "coc-webpack.enable": true,
+  "coc-webpack.disableWhenUseTypeCheck": true,
+  "coc-webpack.trace.server": "off",
+  "diagnostic.displayByAle": true
 }

@@ -64,7 +64,8 @@ return packer.startup(function(use)
    end
   }
   use 'preservim/nerdtree'
-
+  -- ale  
+  use 'dense-analysis/ale'
   -- for presentations
   use 'sotte/presenting.vim'
 
